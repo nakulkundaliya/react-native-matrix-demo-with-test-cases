@@ -23,7 +23,7 @@ class ProductRecommendationScreen extends Component {
     super(props);
     this.state = {
       age: '',
-      isStudent: '',
+      isStudent: 'Yes',
       income: '',
       bundles,
       bundle: null
@@ -66,6 +66,10 @@ class ProductRecommendationScreen extends Component {
     }
   };
 
+  updateFormValue = (key, value) => {
+    this.setState({ [key]: value });
+  };
+
   renderForm() {
     const { age, income, isStudent } = this.state;
     const disable = !age || !income || !isStudent;
@@ -75,7 +79,7 @@ class ProductRecommendationScreen extends Component {
           placeholder="Enter age"
           keyboardType="number-pad"
           style={styles.textInputStyle}
-          onChangeText={text => this.setState({ age: text })}
+          onChangeText={value => this.updateFormValue('age', value)}
           value={age}
         />
         <View>
@@ -87,9 +91,7 @@ class ProductRecommendationScreen extends Component {
             labelHorizontal={true}
             buttonColor={'#2196f3'}
             animation={true}
-            onPress={value => {
-              this.setState({ isStudent: value });
-            }}
+            onPress={value => this.updateFormValue('isStudent', value)}
           />
         </View>
 
@@ -97,7 +99,7 @@ class ProductRecommendationScreen extends Component {
           placeholder="Enter Income"
           keyboardType="number-pad"
           style={styles.textInputStyle}
-          onChangeText={text => this.setState({ income: text })}
+          onChangeText={value => this.updateFormValue('income', value)}
           value={income}
         />
         <Button
@@ -133,15 +135,4 @@ class ProductRecommendationScreen extends Component {
   }
 }
 
-const mapStateToProps = state => {
-  return {};
-};
-
-const mapDispatchToProps = dispatch => {
-  return {};
-};
-
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(ProductRecommendationScreen);
+export default ProductRecommendationScreen;

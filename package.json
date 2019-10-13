@@ -64,12 +64,11 @@
     "enzyme-adapter-react-16": "^1.15.1",
     "ignite-andross": "^4.1.0",
     "ignite-standard": "1.0.0",
-    "jest": "^24.9.0",
+    "jest": "23.6.0",
     "metro-react-native-babel-preset": "^0.56.0",
     "mockery": "^2.1.0",
     "react-devtools-core": "3.6.0",
-    "react-dom": "16.7.0",
-    "react-test-renderer": "16.8.3",
+    "react-dom": "^16.7.0",
     "reactotron-react-native": "^2.1.0",
     "reactotron-redux": "^2.1.0",
     "reactotron-redux-saga": "^3.0.0",
@@ -78,23 +77,27 @@
   },
   "jest": {
     "preset": "react-native",
-    "testMatch": [
-      "<rootDir>/Tests/**/*.js",
-      "**/?(*.)(spec|test).js?(x)"
+    "collectCoverage": true,
+    "moduleDirectories": [
+      "node_modules",
+      "src"
     ],
-    "testPathIgnorePatterns": [
-      "/node_modules/",
-      "<rootDir>/Tests/Setup.js"
-    ],
-    "moduleNameMapper": {
-      "^.+\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "identity-obj-proxy"
-    },
     "transform": {
-      "^.+\\.(js)$": "<rootDir>/node_modules/react-native/jest/preprocessor.js"
+      "^.+\\.js$": "<rootDir>/node_modules/react-native/jest/preprocessor.js"
     },
     "setupFiles": [
-      "<rootDir>/Tests/Setup"
-    ]
+      "<rootDir>/jest/setup.js"
+    ],
+    "transformIgnorePatterns": [
+      "node_modules/(?!(jest-)?react-native)"
+    ],
+    "coveragePathIgnorePatterns": [
+      "/node_modules/",
+      "/jest"
+    ],
+    "globals": {
+      "alert": {}
+    }
   },
   "config": {},
   "standard": {

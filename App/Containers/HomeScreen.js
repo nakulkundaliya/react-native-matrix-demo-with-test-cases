@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import { View, Text } from 'react-native';
-import { connect } from 'react-redux';
-import { TouchableOpacity } from 'react-native-gesture-handler';
+import { View } from 'react-native';
 
 // Styles
 import styles from './Styles/HomeScreenStyles';
@@ -36,11 +34,4 @@ class HomeScreen extends Component {
   }
 }
 
-const mapStateToProps = state => ({});
-
-const mapDispatchToProps = dispatch => ({});
-
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(HomeScreen);
+export default HomeScreen;

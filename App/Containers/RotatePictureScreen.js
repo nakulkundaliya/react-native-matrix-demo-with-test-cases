@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
 import { ScrollView, TextInput, View, Text } from 'react-native';
-import { connect } from 'react-redux';
 import Button from '../Components/Button';
 import Box from '../Components/Box';
 import styles from './Styles/RotatePictureScreenStyle';
-import { TouchableOpacity } from 'react-native-gesture-handler';
+
 class RotatePictureScreen extends Component {
   static navigationOptions = {
     title: 'Rotate Picture'
@@ -46,7 +45,7 @@ class RotatePictureScreen extends Component {
     const y = n - 1;
     for (let i = 0; i < x; i++) {
       for (let j = i; j < y - i; j++) {
-        k = matrix[i][j];
+        let k = matrix[i][j];
         matrix[i][j] = matrix[y - j][i];
         matrix[y - j][i] = matrix[y - i][y - j];
         matrix[y - i][y - j] = matrix[j][y - i];
@@ -85,11 +84,11 @@ class RotatePictureScreen extends Component {
     const { nMatrix, matrix } = this.state;
     return (
       <View style={styles.matrixViewStyle}>
-        {matrix.map(row => {
+        {matrix.map((row, index) => {
           return (
-            <View style={styles.matrixRowStyle}>
-              {row.map(column => {
-                return <Box value={column} nMatrix={nMatrix} />;
+            <View style={styles.matrixRowStyle} key={index}>
+              {row.map((column, i) => {
+                return <Box key={i} value={column} nMatrix={nMatrix} />;
               })}
             </View>
           );
@@ -121,15 +120,4 @@ class RotatePictureScreen extends Component {
   }
 }
 
-const mapStateToProps = state => {
-  return {};
-};
-
-const mapDispatchToProps = dispatch => {
-  return {};
-};
-
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(RotatePictureScreen);
+export default RotatePictureScreen;

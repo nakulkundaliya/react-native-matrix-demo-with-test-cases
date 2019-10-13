@@ -1,0 +1,794 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProductRecommendationScreen Rendering should match to snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <ProductRecommendationScreen />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "children": Array [
+        <View>
+          <TextInput
+            allowFontScaling={true}
+            keyboardType="number-pad"
+            onChangeText={[Function]}
+            placeholder="Enter age"
+            rejectResponderTermination={true}
+            style={
+              Object {
+                "borderColor": "#595959",
+                "borderRadius": 10,
+                "borderWidth": 1,
+                "height": 50,
+                "justifyContent": "center",
+                "marginVertical": 10,
+                "paddingHorizontal": 10,
+                "width": "100%",
+              }
+            }
+            underlineColorAndroid="transparent"
+            value=""
+          />
+          <View>
+            <Text
+              style={
+                Object {
+                  "marginVertical": 5,
+                }
+              }
+            >
+              Are you student ?
+            </Text>
+            <RadioForm
+              animation={true}
+              buttonColor="#2196f3"
+              disabled={false}
+              formHorizontal={true}
+              initial={0}
+              labelColor="#000"
+              labelHorizontal={true}
+              onPress={[Function]}
+              radio_props={
+                Array [
+                  Object {
+                    "label": "Yes ",
+                    "value": "Yes",
+                  },
+                  Object {
+                    "label": "No",
+                    "value": "No",
+                  },
+                ]
+              }
+              selectedButtonColor="#2196f3"
+              selectedLabelColor="#000"
+              wrapStyle={Object {}}
+            />
+          </View>
+          <TextInput
+            allowFontScaling={true}
+            keyboardType="number-pad"
+            onChangeText={[Function]}
+            placeholder="Enter Income"
+            rejectResponderTermination={true}
+            style={
+              Object {
+                "borderColor": "#595959",
+                "borderRadius": 10,
+                "borderWidth": 1,
+                "height": 50,
+                "justifyContent": "center",
+                "marginVertical": 10,
+                "paddingHorizontal": 10,
+                "width": "100%",
+              }
+            }
+            underlineColorAndroid="transparent"
+            value=""
+          />
+          <Button
+            disable={true}
+            name="Submit"
+            onPress={[Function]}
+            style={
+              Object {
+                "width": "100%",
+              }
+            }
+          />
+        </View>,
+        undefined,
+      ],
+      "style": Object {
+        "backgroundColor": "rgba(0,0,0,0)",
+        "flex": 1,
+        "marginHorizontal": 15,
+        "paddingTop": 10,
+      },
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": Array [
+            <TextInput
+              allowFontScaling={true}
+              keyboardType="number-pad"
+              onChangeText={[Function]}
+              placeholder="Enter age"
+              rejectResponderTermination={true}
+              style={
+                Object {
+                  "borderColor": "#595959",
+                  "borderRadius": 10,
+                  "borderWidth": 1,
+                  "height": 50,
+                  "justifyContent": "center",
+                  "marginVertical": 10,
+                  "paddingHorizontal": 10,
+                  "width": "100%",
+                }
+              }
+              underlineColorAndroid="transparent"
+              value=""
+            />,
+            <View>
+              <Text
+                style={
+                  Object {
+                    "marginVertical": 5,
+                  }
+                }
+              >
+                Are you student ?
+              </Text>
+              <RadioForm
+                animation={true}
+                buttonColor="#2196f3"
+                disabled={false}
+                formHorizontal={true}
+                initial={0}
+                labelColor="#000"
+                labelHorizontal={true}
+                onPress={[Function]}
+                radio_props={
+                  Array [
+                    Object {
+                      "label": "Yes ",
+                      "value": "Yes",
+                    },
+                    Object {
+                      "label": "No",
+                      "value": "No",
+                    },
+                  ]
+                }
+                selectedButtonColor="#2196f3"
+                selectedLabelColor="#000"
+                wrapStyle={Object {}}
+              />
+            </View>,
+            <TextInput
+              allowFontScaling={true}
+              keyboardType="number-pad"
+              onChangeText={[Function]}
+              placeholder="Enter Income"
+              rejectResponderTermination={true}
+              style={
+                Object {
+                  "borderColor": "#595959",
+                  "borderRadius": 10,
+                  "borderWidth": 1,
+                  "height": 50,
+                  "justifyContent": "center",
+                  "marginVertical": 10,
+                  "paddingHorizontal": 10,
+                  "width": "100%",
+                }
+              }
+              underlineColorAndroid="transparent"
+              value=""
+            />,
+            <Button
+              disable={true}
+              name="Submit"
+              onPress={[Function]}
+              style={
+                Object {
+                  "width": "100%",
+                }
+              }
+            />,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "allowFontScaling": true,
+              "keyboardType": "number-pad",
+              "onChangeText": [Function],
+              "placeholder": "Enter age",
+              "rejectResponderTermination": true,
+              "style": Object {
+                "borderColor": "#595959",
+                "borderRadius": 10,
+                "borderWidth": 1,
+                "height": 50,
+                "justifyContent": "center",
+                "marginVertical": 10,
+                "paddingHorizontal": 10,
+                "width": "100%",
+              },
+              "underlineColorAndroid": "transparent",
+              "value": "",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                <Text
+                  style={
+                    Object {
+                      "marginVertical": 5,
+                    }
+                  }
+                >
+                  Are you student ?
+                </Text>,
+                <RadioForm
+                  animation={true}
+                  buttonColor="#2196f3"
+                  disabled={false}
+                  formHorizontal={true}
+                  initial={0}
+                  labelColor="#000"
+                  labelHorizontal={true}
+                  onPress={[Function]}
+                  radio_props={
+                    Array [
+                      Object {
+                        "label": "Yes ",
+                        "value": "Yes",
+                      },
+                      Object {
+                        "label": "No",
+                        "value": "No",
+                      },
+                    ]
+                  }
+                  selectedButtonColor="#2196f3"
+                  selectedLabelColor="#000"
+                  wrapStyle={Object {}}
+                />,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": "Are you student ?",
+                  "style": Object {
+                    "marginVertical": 5,
+                  },
+                },
+                "ref": null,
+                "rendered": "Are you student ?",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "animation": true,
+                  "buttonColor": "#2196f3",
+                  "disabled": false,
+                  "formHorizontal": true,
+                  "initial": 0,
+                  "labelColor": "#000",
+                  "labelHorizontal": true,
+                  "onPress": [Function],
+                  "radio_props": Array [
+                    Object {
+                      "label": "Yes ",
+                      "value": "Yes",
+                    },
+                    Object {
+                      "label": "No",
+                      "value": "No",
+                    },
+                  ],
+                  "selectedButtonColor": "#2196f3",
+                  "selectedLabelColor": "#000",
+                  "wrapStyle": Object {},
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+            ],
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "allowFontScaling": true,
+              "keyboardType": "number-pad",
+              "onChangeText": [Function],
+              "placeholder": "Enter Income",
+              "rejectResponderTermination": true,
+              "style": Object {
+                "borderColor": "#595959",
+                "borderRadius": 10,
+                "borderWidth": 1,
+                "height": 50,
+                "justifyContent": "center",
+                "marginVertical": 10,
+                "paddingHorizontal": 10,
+                "width": "100%",
+              },
+              "underlineColorAndroid": "transparent",
+              "value": "",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "disable": true,
+              "name": "Submit",
+              "onPress": [Function],
+              "style": Object {
+                "width": "100%",
+              },
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
+      },
+      undefined,
+    ],
+    "type": [MockFunction],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": Array [
+          <View>
+            <TextInput
+              allowFontScaling={true}
+              keyboardType="number-pad"
+              onChangeText={[Function]}
+              placeholder="Enter age"
+              rejectResponderTermination={true}
+              style={
+                Object {
+                  "borderColor": "#595959",
+                  "borderRadius": 10,
+                  "borderWidth": 1,
+                  "height": 50,
+                  "justifyContent": "center",
+                  "marginVertical": 10,
+                  "paddingHorizontal": 10,
+                  "width": "100%",
+                }
+              }
+              underlineColorAndroid="transparent"
+              value=""
+            />
+            <View>
+              <Text
+                style={
+                  Object {
+                    "marginVertical": 5,
+                  }
+                }
+              >
+                Are you student ?
+              </Text>
+              <RadioForm
+                animation={true}
+                buttonColor="#2196f3"
+                disabled={false}
+                formHorizontal={true}
+                initial={0}
+                labelColor="#000"
+                labelHorizontal={true}
+                onPress={[Function]}
+                radio_props={
+                  Array [
+                    Object {
+                      "label": "Yes ",
+                      "value": "Yes",
+                    },
+                    Object {
+                      "label": "No",
+                      "value": "No",
+                    },
+                  ]
+                }
+                selectedButtonColor="#2196f3"
+                selectedLabelColor="#000"
+                wrapStyle={Object {}}
+              />
+            </View>
+            <TextInput
+              allowFontScaling={true}
+              keyboardType="number-pad"
+              onChangeText={[Function]}
+              placeholder="Enter Income"
+              rejectResponderTermination={true}
+              style={
+                Object {
+                  "borderColor": "#595959",
+                  "borderRadius": 10,
+                  "borderWidth": 1,
+                  "height": 50,
+                  "justifyContent": "center",
+                  "marginVertical": 10,
+                  "paddingHorizontal": 10,
+                  "width": "100%",
+                }
+              }
+              underlineColorAndroid="transparent"
+              value=""
+            />
+            <Button
+              disable={true}
+              name="Submit"
+              onPress={[Function]}
+              style={
+                Object {
+                  "width": "100%",
+                }
+              }
+            />
+          </View>,
+          undefined,
+        ],
+        "style": Object {
+          "backgroundColor": "rgba(0,0,0,0)",
+          "flex": 1,
+          "marginHorizontal": 15,
+          "paddingTop": 10,
+        },
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              <TextInput
+                allowFontScaling={true}
+                keyboardType="number-pad"
+                onChangeText={[Function]}
+                placeholder="Enter age"
+                rejectResponderTermination={true}
+                style={
+                  Object {
+                    "borderColor": "#595959",
+                    "borderRadius": 10,
+                    "borderWidth": 1,
+                    "height": 50,
+                    "justifyContent": "center",
+                    "marginVertical": 10,
+                    "paddingHorizontal": 10,
+                    "width": "100%",
+                  }
+                }
+                underlineColorAndroid="transparent"
+                value=""
+              />,
+              <View>
+                <Text
+                  style={
+                    Object {
+                      "marginVertical": 5,
+                    }
+                  }
+                >
+                  Are you student ?
+                </Text>
+                <RadioForm
+                  animation={true}
+                  buttonColor="#2196f3"
+                  disabled={false}
+                  formHorizontal={true}
+                  initial={0}
+                  labelColor="#000"
+                  labelHorizontal={true}
+                  onPress={[Function]}
+                  radio_props={
+                    Array [
+                      Object {
+                        "label": "Yes ",
+                        "value": "Yes",
+                      },
+                      Object {
+                        "label": "No",
+                        "value": "No",
+                      },
+                    ]
+                  }
+                  selectedButtonColor="#2196f3"
+                  selectedLabelColor="#000"
+                  wrapStyle={Object {}}
+                />
+              </View>,
+              <TextInput
+                allowFontScaling={true}
+                keyboardType="number-pad"
+                onChangeText={[Function]}
+                placeholder="Enter Income"
+                rejectResponderTermination={true}
+                style={
+                  Object {
+                    "borderColor": "#595959",
+                    "borderRadius": 10,
+                    "borderWidth": 1,
+                    "height": 50,
+                    "justifyContent": "center",
+                    "marginVertical": 10,
+                    "paddingHorizontal": 10,
+                    "width": "100%",
+                  }
+                }
+                underlineColorAndroid="transparent"
+                value=""
+              />,
+              <Button
+                disable={true}
+                name="Submit"
+                onPress={[Function]}
+                style={
+                  Object {
+                    "width": "100%",
+                  }
+                }
+              />,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "allowFontScaling": true,
+                "keyboardType": "number-pad",
+                "onChangeText": [Function],
+                "placeholder": "Enter age",
+                "rejectResponderTermination": true,
+                "style": Object {
+                  "borderColor": "#595959",
+                  "borderRadius": 10,
+                  "borderWidth": 1,
+                  "height": 50,
+                  "justifyContent": "center",
+                  "marginVertical": 10,
+                  "paddingHorizontal": 10,
+                  "width": "100%",
+                },
+                "underlineColorAndroid": "transparent",
+                "value": "",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": Array [
+                  <Text
+                    style={
+                      Object {
+                        "marginVertical": 5,
+                      }
+                    }
+                  >
+                    Are you student ?
+                  </Text>,
+                  <RadioForm
+                    animation={true}
+                    buttonColor="#2196f3"
+                    disabled={false}
+                    formHorizontal={true}
+                    initial={0}
+                    labelColor="#000"
+                    labelHorizontal={true}
+                    onPress={[Function]}
+                    radio_props={
+                      Array [
+                        Object {
+                          "label": "Yes ",
+                          "value": "Yes",
+                        },
+                        Object {
+                          "label": "No",
+                          "value": "No",
+                        },
+                      ]
+                    }
+                    selectedButtonColor="#2196f3"
+                    selectedLabelColor="#000"
+                    wrapStyle={Object {}}
+                  />,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": "Are you student ?",
+                    "style": Object {
+                      "marginVertical": 5,
+                    },
+                  },
+                  "ref": null,
+                  "rendered": "Are you student ?",
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "animation": true,
+                    "buttonColor": "#2196f3",
+                    "disabled": false,
+                    "formHorizontal": true,
+                    "initial": 0,
+                    "labelColor": "#000",
+                    "labelHorizontal": true,
+                    "onPress": [Function],
+                    "radio_props": Array [
+                      Object {
+                        "label": "Yes ",
+                        "value": "Yes",
+                      },
+                      Object {
+                        "label": "No",
+                        "value": "No",
+                      },
+                    ],
+                    "selectedButtonColor": "#2196f3",
+                    "selectedLabelColor": "#000",
+                    "wrapStyle": Object {},
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+              ],
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "allowFontScaling": true,
+                "keyboardType": "number-pad",
+                "onChangeText": [Function],
+                "placeholder": "Enter Income",
+                "rejectResponderTermination": true,
+                "style": Object {
+                  "borderColor": "#595959",
+                  "borderRadius": 10,
+                  "borderWidth": 1,
+                  "height": 50,
+                  "justifyContent": "center",
+                  "marginVertical": 10,
+                  "paddingHorizontal": 10,
+                  "width": "100%",
+                },
+                "underlineColorAndroid": "transparent",
+                "value": "",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "disable": true,
+                "name": "Submit",
+                "onPress": [Function],
+                "style": Object {
+                  "width": "100%",
+                },
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+        undefined,
+      ],
+      "type": [MockFunction],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromError": true,
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+    Symbol(enzyme.__providerValues__): undefined,
+  },
+  Symbol(enzyme.__providerValues__): Map {},
+  Symbol(enzyme.__childContext__): null,
+}
+`;

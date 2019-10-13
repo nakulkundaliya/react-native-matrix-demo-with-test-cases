@@ -1,0 +1,479 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for Containers/ProductRecommendationScreen.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../index.html">All files</a> / <a href="index.html">Containers</a> ProductRecommendationScreen.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">88.89% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>64/72</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">76% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>19/25</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">70% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>7/10</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">80.95% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>34/42</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line high'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139</td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React, { Component } from 'react';
+import { ScrollView, View, TextInput, Text } from 'react-native';
+import { connect } from 'react-redux';
+import RadioForm from 'react-native-simple-radio-button';
+import Button from '../Components/Button';
+import bundles from '../Fixtures/bundles.json';
+// Add Actions - replace 'Your' with whatever your reducer is called :)
+// import YourActions from '../Redux/YourRedux'
+&nbsp;
+// Styles
+import styles from './Styles/ProductRecommendationScreenStyle';
+const RADIO_PARAMS = [
+  { label: 'Yes ', value: 'Yes' },
+  { label: 'No', value: 'No' }
+];
+&nbsp;
+class ProductRecommendationScreen extends Component {
+  static navigationOptions = {
+    title: 'Product Recommendation'
+  };
+&nbsp;
+  constructor(props) {
+    super(props);
+    this.state = {
+      age: '',
+      isStudent: 'Yes',
+      income: '',
+      bundles,
+      bundle: null
+    };
+  }
+&nbsp;
+  submit = () =&gt; {
+    const {
+      age,
+      income,
+      isStudent,
+      bundles: { juniorSaver, student, classic, classicPlus, gold }
+    } = this.state;
+    const disable = isNaN(age) || isNaN(income) || !age || !income;
+&nbsp;
+    if (disable) {
+      alert('Pleaae enter proper value');
+      return;
+    }
+    if<span class="missing-if-branch" title="if path not taken" >I</span> (age &lt; 18) {
+      th<span class="cstat-no" title="statement not covered" >is.setState({</span>
+        bundle: juniorSaver
+      });
+    } else if<span class="missing-if-branch" title="if path not taken" >I</span> (isStudent === 'Yes') {
+      th<span class="cstat-no" title="statement not covered" >is.setState({</span>
+        bundle: student
+      });
+    } else if<span class="missing-if-branch" title="if path not taken" >I</span> (income &gt; 0 &amp;&amp; income &lt;= 12000) {
+      th<span class="cstat-no" title="statement not covered" >is.setState({</span>
+        bundle: classic
+      });
+    } else if<span class="missing-if-branch" title="else path not taken" >E</span> (income &gt; 12000 &amp;&amp; income &lt;= 40000) {
+      this.setState({
+        bundle: classicPlus
+      });
+    } else if<span class="cstat-no" title="statement not covered" > (income &gt; 40000) {</span>
+      th<span class="cstat-no" title="statement not covered" >is.setState({</span>
+        bundle: gold
+      });
+    }
+  };
+&nbsp;
+  updateFormValue = (key, value) =&gt; {
+    this.setState({ [key]: value });
+  };
+&nbsp;
+  renderForm() {
+    const { age, income, isStudent } = this.state;
+    const disable = !age || !income || !isStudent;
+    return (
+      &lt;View&gt;
+        &lt;TextInput
+          placeholder="Enter age"
+          keyboardType="number-pad"
+          style={styles.textInputStyle}
+          onChangeText={value =&gt; <span class="fstat-no" title="function not covered" >this.updateFo</span>rmValue(<span class="cstat-no" title="statement not covered" >'age', value)}</span>
+          value={age}
+        /&gt;
+        &lt;View&gt;
+          &lt;Text style={styles.studentTextStyle}&gt;Are you student ?&lt;/Text&gt;
+          &lt;RadioForm
+            radio_props={RADIO_PARAMS}
+            initial={0}
+            formHorizontal={true}
+            labelHorizontal={true}
+            buttonColor={'#2196f3'}
+            animation={true}
+            onPress={value =<span class="fstat-no" title="function not covered" >&gt; this.u</span>pdateFor<span class="cstat-no" title="statement not covered" >mValue('isStudent', value)}</span>
+          /&gt;
+        &lt;/View&gt;
+&nbsp;
+        &lt;TextInput
+          placeholder="Enter Income"
+          keyboardType="number-pad"
+          style={styles.textInputStyle}
+          onChangeText={value =&gt; <span class="fstat-no" title="function not covered" >this.updateFo</span>rmValue(<span class="cstat-no" title="statement not covered" >'income', value)}</span>
+          value={income}
+        /&gt;
+        &lt;Button
+          name="Submit"
+          onPress={this.submit}
+          style={{ width: '100%' }}
+          disable={disable}
+        /&gt;
+      &lt;/View&gt;
+    );
+  }
+&nbsp;
+  renderOutput() {
+    const { bundle } = this.state;
+    if (!bundle) return;
+    return (
+      &lt;View&gt;
+        &lt;Text style={{ fontWeight: '800', fontSize: 18 }}&gt;Bundle Output&lt;/Text&gt;
+        &lt;Text&gt;Bundle Name : {bundle.name}&lt;/Text&gt;
+        &lt;Text&gt;Products : {bundle.products.join(',')}&lt;/Text&gt;
+        &lt;Text&gt;Value: {bundle.value}&lt;/Text&gt;
+      &lt;/View&gt;
+    );
+  }
+&nbsp;
+  render() {
+    return (
+      &lt;ScrollView style={styles.container}&gt;
+        {this.renderForm()}
+        {this.renderOutput()}
+      &lt;/ScrollView&gt;
+    );
+  }
+}
+&nbsp;
+export default ProductRecommendationScreen;
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Mon Oct 14 2019 01:40:08 GMT+0530 (India Standard Time)
+</div>
+</div>
+<script src="../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../sorter.js"></script>
+</body>
+</html>
