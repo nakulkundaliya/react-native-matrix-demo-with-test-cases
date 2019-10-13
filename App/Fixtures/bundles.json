@@ -1,0 +1,27 @@
+{
+  "juniorSaver": {
+    "name": "Junior Saver",
+    "products": ["Junior Saver Account"],
+    "value": 0
+  },
+  "student": {
+    "name": "Student",
+    "products": ["Student Account", "Debit Card", "Credit Card"],
+    "value": 0
+  },
+  "classic": {
+    "name": "Classic",
+    "products": ["Current Account", "Debit Card"],
+    "value": 1
+  },
+  "classicPlus": {
+    "name": "Classic Plus",
+    "products": ["Current Account", "Debit Card", "Credit Card"],
+    "value": 2
+  },
+  "gold": {
+    "name": "Gold",
+    "products": ["Current Account", "Debit Card", "Gold Credit Card"],
+    "value": 3
+  }
+}
