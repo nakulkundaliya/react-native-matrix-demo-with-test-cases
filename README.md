@@ -1,26 +1,41 @@
-# CBox Challange
+# React Native Metrix
 
 ## Setup React-Native in Mechine
 
 ```
- $ npm install -g react-native-cli
+$ npm install -g react-native-cli
 ```
 
 ## Run Project
 
+`1. Open terminal and go to project folder`
+
+`2. Install node dependancy`
+
 ```
-1. Open terminal and go to project folder
+$ npm install
+```
 
-2. Install node dependancy
+`3. Run project in iPhone`
 
-    $ npm install
+```
+$ react-native run-ios
+```
 
-3. Run project in iPhone
+`4. Run Project in Android`
 
-    $ react-native run-ios
+```
+$ react-native run-android
+```
 
-4. Run Project in Android
+## Run test cases
 
-    $ react-native run-android
+```
+$ npm run test
+```
 
+`Update snapshote`
+
+```
+$ npm test -- -u
 ```
